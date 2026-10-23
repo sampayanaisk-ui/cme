@@ -301,6 +301,29 @@
   );
 }
 
+/* Remove hard rectangular edge of portrait */
+.hero-right img,
+.hero img.profile-photo {
+  display: block;
+  max-width: 420px;
+  height: auto;
+  background: transparent !important;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    transparent 100%
+  ) !important;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    transparent 100%
+  ) !important;
+}
+
 </style>
 </head>
 <body>
