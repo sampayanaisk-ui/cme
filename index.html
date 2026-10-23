@@ -276,7 +276,31 @@
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
     .reveal{transition:none; opacity:1; transform:none;}
-  }
+  
+  
+/* Natural profile photo fade */
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 70%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 70%,
+    transparent 100%
+  );
+}
+
 </style>
 </head>
 <body>
